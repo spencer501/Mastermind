@@ -8,5 +8,5 @@ package com.spencerpease.mastermind;
  */
 public class CodeBreaker {
 
-
+    
 }
