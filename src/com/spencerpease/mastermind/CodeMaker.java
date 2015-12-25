@@ -35,7 +35,7 @@ public class CodeMaker {
         ArrayList<Integer> digits = new ArrayList<Integer>();
         Stack<Integer> reorder = new Stack<>();
 
-        for (int i = 0; i < digits.size(); i++) {
+        while(number != 0) {
             reorder.push(number % 10);
             number = number / 10;
         }
@@ -50,5 +50,9 @@ public class CodeMaker {
     public void chooseCode() {
         int randIndex = random.nextInt(this.comboList.size());
         this.chosenCode = this.comboList.get(randIndex);
+    }
+
+    public String viewCode() {
+        return this.chosenCode.toString();
     }
 }
