@@ -18,7 +18,10 @@ public class GameMain {
 
         Scanner input = new Scanner(new File(COMBINATION_FILE));
         CodeMaker codeMaker = new CodeMaker(input);
+
+        System.out.println("A code will now be chosen.");
         codeMaker.chooseCode();
+        System.out.println("Chosen code is: " + codeMaker.viewCode());
 
     }
 
